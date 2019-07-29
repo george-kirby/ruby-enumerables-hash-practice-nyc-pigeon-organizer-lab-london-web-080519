@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
           
         else
           #creates a new pair in memo for this pigeon
-          memo[name] = {attribute => [actual_att]
+          memo[name] = {attribute => [actual_att.to_s]
         end
       end
     
