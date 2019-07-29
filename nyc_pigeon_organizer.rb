@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       
       end
     end
-    
+    memo
   end
   
   pigeon_list
