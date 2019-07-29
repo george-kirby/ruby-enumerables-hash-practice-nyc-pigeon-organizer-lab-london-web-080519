@@ -7,7 +7,9 @@ def nyc_pigeon_organizer(data)
     details.each do |qual_att, names_of_qual_att|
       for name in names_of_qual_att
         if memo.include?name
+        # if pigeon already has an entry in pigeon_list
           if memo[name].include?attribute
+          #if pigeon already has something under this attribute
             memo[name][attribute].push(qual_att.to_s)
           else
             memo[name][attribute] = [qual_att.to_s]
