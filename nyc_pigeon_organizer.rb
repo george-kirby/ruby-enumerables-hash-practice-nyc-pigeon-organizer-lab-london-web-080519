@@ -10,8 +10,11 @@ def nyc_pigeon_organizer(data)
         # if pigeon already has an entry in pigeon_list
           if memo[name].include?attribute
           #if pigeon already has something under this attribute
+          # add to existing attribute value
             memo[name][attribute].push(qual_att.to_s)
           else
+          # pigeon doesn't have this attribute yet
+          # create a new attribute pair
             memo[name][attribute] = [qual_att.to_s]
           end
           
